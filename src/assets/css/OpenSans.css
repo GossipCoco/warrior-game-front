@@ -1,0 +1,8 @@
+/* roboto */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('../fonts/OpenSans/OpenSans-Regular.ttf'),
+         url('../fonts/OpenSans/OpenSans-Regular.ttf') format('ttf'), /* Super Modern Browsers */
+  }

@@ -1,0 +1,16 @@
+@import './Roboto.css';
+@import './OpenSans.css';
+
+:root{
+    --opensans-text: 'Open Sans', sans-serif;
+    --roboto-text: 'Roboto', sans-serif;
+
+    --main-white: 255, 255, 255;
+    --main-grey-background: 249, 251, 253;
+    --dark-green-01: 0, 75, 66;
+    --dark-green-02: 61, 111, 52;
+    --middle-green-01: 3, 152, 134;
+    --middle-green-02: 58, 174, 134;
+    --clear-green-01: 146, 200, 66;
+    --clear-green-02: 89, 207, 187;
+}

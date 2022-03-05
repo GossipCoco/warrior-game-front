@@ -1,0 +1,75 @@
+@import './variables.scss';
+html, body{
+    height: 100vh;
+    overflow-y: hidden;     
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgba(var(--main-grey-background), 1);
+    background-image: url('../images/Backgrounds/background-main.png');
+    background-size: cover;
+    background-position: 5%;
+}
+#app{
+    height: 89vh;
+}
+.global-container{
+    margin-top: 6rem;
+    height: 90vh;
+}
+.container{
+    max-width: 100%;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+.main-container .container{
+    max-width: 100%;
+}
+.character-card, .profil-user-card{
+    flex: 1;
+}
+.main-container .row .col {
+    border-right: 1px solid gray;
+}
+.themed-grid-col {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(var(--main-white), 1);
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+.character-container{
+    margin: 0.5rem;
+    height: 90vh;    
+    overflow-y: auto;     
+    overflow-x: hidden;
+}
+
+/* Scroll bar */
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(var(--dark-green-01),1) rgba(var(--dark-green-03),1);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(var(--dark-green-03),1);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--dark-green-01),1);
+    border-radius: 20px;
+    border: 3px solid rgba(var(--dark-green-03),1);
+  }
+  

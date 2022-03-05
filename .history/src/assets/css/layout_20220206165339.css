@@ -1,0 +1,36 @@
+@import './variables.scss';
+html, body{
+    height: 100vh;
+    overflow-y: auto;     
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: rgba(var(--main-grey-background), 1);
+    background-image: url('../images/Backgrounds/background-main.png');
+    background-size: cover;
+    background-position: 5%;
+}
+#app{
+    height: 89vh;
+}
+.global-container{
+    margin-top: 6rem;
+    height: 90vh;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+.main-container .container{
+    max-width: 100%;
+}
+.character-card, .profil-user-card{
+    flex: 1;
+}
+.main-container .row .col {
+    border-right: 1px solid gray;
+}

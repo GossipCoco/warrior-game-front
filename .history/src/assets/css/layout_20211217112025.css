@@ -1,0 +1,23 @@
+@import './variables.scss';
+ html, body{
+     height: 100vh;
+     overflow: hidden;
+     background-color: rgba(var(--main-grey-background), 1);
+ }
+ #app, .container-fluid, .container-fluid .row, .menu-left{
+     height: 100%;
+ }
+ .right-container{
+     display: flex;
+     flex-direction: column;
+ }
+ .container-fluid{
+     padding: 0;
+ }
+ .main-container{
+     display: flex;
+     flex-direction: row;
+ }
+ .character-card, .profil-user-card{
+     flex: 1;
+ }

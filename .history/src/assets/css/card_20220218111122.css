@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.character-details.card::after{
+    content: url('../../../public/images/cat2.svg');
+    position: absolute;
+    top: -12%;
+    left: 90%;
+    z-index: 99999;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    width: 25rem;
+}
+.character-card.card{
+    background: linear-gradient(90deg, rgba(var(--dark-green-01), 1), rgba(var(--clear-green-02), 1));
+    border: none;
+    color: rgba(var(--main-white), 1);
+    font-family: var(--opensans-text);
+    margin: 1rem;
+}
+
+/* Character Details */
+
+.character-details{
+    margin: 2rem auto;
+    width: 75rem;
+}
