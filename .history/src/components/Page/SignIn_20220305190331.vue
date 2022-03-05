@@ -80,11 +80,12 @@ export default {
                 this.falsePassword = "Login ou Mot de passe incorrect";
                 router.push("/signin");
               } else {
-                JwtApi.Connexion(data)
-                .then(() => {
-                  
+                JwtApi.Connexion(data).then((w) => {
+                  console.log(w)
                   this.$router.push({ path: "/home" });
-                })
+                });
+                const usr = JwtApi.SetUser()
+                console.log(usr)
               }
             } else {
               router.push("/signin");

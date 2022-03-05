@@ -16,11 +16,11 @@ JwtAPI.UnsetUser = () => {
 }
 JwtAPI.Connexion = (user) => {
     return axios
-        .post(config.Url + "/user/login", user)
+        .post(config.Url + "user/login", user)
         .then((token) => {
             console.log(token)
             if (token.status == 200) {
-                JwtAPI.SetUser(token.data.token);
+                JwtAPI.SetUser(token.data);
                 console.log(token.data)
                 axios.defaults.headers.common['Authorization'] = JwtAPI.GetUser()
                 JwtAPI.logged = true

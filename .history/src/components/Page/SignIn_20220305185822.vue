@@ -75,16 +75,17 @@ export default {
             if (response.status == 200) {
               if (
                 response.data.error === "Utilisateur non trouvé" ||
-                response.data.error === "Mot de passe incorrect"
+                response.data.error === "Mot de passe incorrect !"
               ) {
                 this.falsePassword = "Login ou Mot de passe incorrect";
                 router.push("/signin");
               } else {
-                JwtApi.Connexion(data)
-                .then(() => {
-                  
+                JwtApi.Connexion(data).then((w) => {
+                  console.log(w)
                   this.$router.push({ path: "/home" });
-                })
+                });
+                const usr = JwtApi.SetUser()
+                console.log(usr)
               }
             } else {
               router.push("/signin");

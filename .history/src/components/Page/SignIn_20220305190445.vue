@@ -82,9 +82,11 @@ export default {
               } else {
                 JwtApi.Connexion(data)
                 .then(() => {
-                  
+                  //console.log(w)
                   this.$router.push({ path: "/home" });
-                })
+                });
+                //const usr = JwtApi.SetUser()
+                //console.log(usr)
               }
             } else {
               router.push("/signin");
