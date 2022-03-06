@@ -11,7 +11,7 @@
       <h5 class="card-title">{{ clan.Name }}</h5>
       <div class="card-text">
         <p>{{clan.Description}}</p>
-        <p>{{clan.Warriors}}</p>
+        <p>{{clan}}</p>
       </div>
 
     </div>

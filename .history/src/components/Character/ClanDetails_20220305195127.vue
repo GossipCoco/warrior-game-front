@@ -9,10 +9,9 @@
           ></div>
     <div class="card-body">
       <h5 class="card-title">{{ clan.Name }}</h5>
-      <div class="card-text">
-        <p>{{clan.Description}}</p>
-        <p>{{clan.Warriors}}</p>
-      </div>
+      <p class="card-text">
+        {{clan}}
+      </p>
 
     </div>
   </div>
