@@ -26,7 +26,7 @@
     "vue-3-socket.io": "^1.0.4",
     "vue-axios": "^3.4.0",
     "vue-router": "^4.0.12",
-    "vuex": "^3.6.2"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
