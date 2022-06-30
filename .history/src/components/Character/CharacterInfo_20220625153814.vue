@@ -1,16 +1,16 @@
 <template>
   <div class="character-card card" style="width: 25rem">
-    <div
+    <!-- <div
       class="card-image"
       v-bind:style="{
         backgroundImage:
           'url(/images/Backgrounds/' + character.Warrior.Clan.Image + ')',
       }"
-    >
-        <!-- <div
+    > -->
+        <div
       class="card-image"
 
-    > -->
+    >
       <img :src="'/images/Characters/' + character.Image" />
     </div>
     <div class="card-header">{{ character.CurrentName }}</div>

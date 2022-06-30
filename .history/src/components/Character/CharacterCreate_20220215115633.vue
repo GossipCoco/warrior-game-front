@@ -94,7 +94,6 @@ export default {
       grade: GradeLocalDatas,
       show: true,
       form: {
-        userId: 'gossipCoco', 
         clanSelected: 'Choisir un clan',
         gradeSelected: 'Choisir un grade',
         name: '',
